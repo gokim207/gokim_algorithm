@@ -1,11 +1,10 @@
 n = int(input())
-java = ['J', 'A', 'V']
 a = input()
 length = 0
 result = ''
 
 for i in a:
-    if i in java:
+    if i == 'J' or i == 'A' or i == 'V':
         length += 1
     else:
         result += i
@@ -14,4 +13,3 @@ if length == n:
     exit()
 else:
     print(result)
-
